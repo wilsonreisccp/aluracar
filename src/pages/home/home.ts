@@ -1,11 +1,12 @@
 import { Component     } from '@angular/core';
 import { NavController, LoadingController, AlertController } from 'ionic-angular';
-import { Carro         } from '../../modelos/carro';
-import { HttpErrorResponse    } from '@angular/common/http';
-import { CarrosServiceProvider } from '../../providers/carros-service/carros-service';
-import { NavLifecycles } from '../../utils/ionic/nav/nav-lifecycles' ;
-import { EscolhaPage } from '../escolha/escolha';
 
+import { HttpErrorResponse } from '@angular/common/http';
+
+import { NavLifecycles         } from '../../utils/ionic/nav/nav-lifecycles' ;
+import { EscolhaPage           } from '../escolha/escolha';
+import { Carro                 } from '../../modelos/carro';
+import { CarrosServiceProvider } from '../../providers/carros-service/carros-service';
 
 @Component({
   selector: 'page-home',
