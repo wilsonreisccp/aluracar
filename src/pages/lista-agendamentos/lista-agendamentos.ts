@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController, Alert } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { Agendamento                 } from '../../modelos/agendamento';
 import { AgendamentoDaoProvider      } from '../../providers/agendamento-dao/agendamento-dao';
 import { AgendamentosServiceProvider } from '../../providers/agendamentos-service/agendamentos-service';
