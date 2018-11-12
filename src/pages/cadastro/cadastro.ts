@@ -4,7 +4,7 @@ import { HomePage                    } from '../home/home';
 import { Carro                       } from '../../modelos/carro';
 import { Agendamento                 } from '../../modelos/agendamento';
 import { AgendamentosServiceProvider } from '../../providers/agendamentos-service/agendamentos-service';
-import { AgendamentoDaoProvider } from '../../providers/agendamento-dao/agendamento-dao';
+import { AgendamentoDaoProvider      } from '../../providers/agendamento-dao/agendamento-dao';
 
 @IonicPage()
 @Component({
