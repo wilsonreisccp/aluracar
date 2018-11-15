@@ -6,6 +6,7 @@ import { StatusBar    } from '@ionic-native/status-bar';
 
 import { MyApp            } from './app.component';
 import { HomePage         } from '../pages/home/home';
+import { LoginPage        } from '../pages/login/login';
 import { HttpClientModule } from '@angular/common/http';
 
 import { CarrosServiceProvider       } from '../providers/carros-service/carros-service';
@@ -21,11 +22,13 @@ import 'rxjs/add/observable/of';
 
 import { IonicStorageModule } from '@ionic/storage';
 import { AgendamentoDaoProvider } from '../providers/agendamento-dao/agendamento-dao';
+import { UsuariosServiceProvider } from '../providers/usuarios-service/usuarios-service';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,8 @@ import { AgendamentoDaoProvider } from '../providers/agendamento-dao/agendamento
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage
   ],
   providers: [
     StatusBar,
@@ -48,7 +52,8 @@ import { AgendamentoDaoProvider } from '../providers/agendamento-dao/agendamento
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     CarrosServiceProvider,
     AgendamentosServiceProvider,
-    AgendamentoDaoProvider
+    AgendamentoDaoProvider,
+    UsuariosServiceProvider
   ]
 })
 export class AppModule {}
